@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Interview Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Activants Sushi Bar, where your journey to sushi is only just beginning!
 
-## Available Scripts
+We've had a bit of trouble with our patented conveyor belt system, so before you can eat, you're going to have to help us get it working.
+
+## Desired Outcome
 
 In the project directory, you can run:
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> If you do not have json-server installed, please run the following command `npm install -g json-server`
 
-### `npm test`
+### Server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get you going, we've got a backend just chock full of sushi just waiting to be eaten! To get get these guys, you're going to have to do the follow:
 
-### `npm run build`
+1. Navigate to `sushi-saga-client` and run `json-server --watch db.json`
+2. Navigate to [http://localhost:3000/sushis](http://localhost:3000/sushis) to confirm delivery of sushi!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Client
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Just as all good sushi needs a firm base of delicious rice, we've given you quite a bit of code to start off your frontend!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will be located within the `src` directory of this repo. Inside are all the components you'll need, as well as instructions as to where and how to render those components properly.
 
-### `npm run eject`
+The component hierarchy should be as follows:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `App` is parent to both `SushiContainer` and `Table`
+- `SushiContainer` is parent to both `Sushi` and `Button`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Be sure to read all of the notes in the all of the components before getting started! They will give you clues as to how and where to manage `state` and `props`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deliverables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+Inspectors will be coming by to check that our patented Sushi Saga conveyor belt is working properly! Oh no! They will be checking the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Sushi list is properly received from the server
+2. Only 4 sushi are rendered at a time
+3. Clicking the "More Sushi!" button shows the next set of 4 sushi in the list. For this assignment, you don't have to be concerned about what happens when you reach the end of the sushi list.
+4. Clicking a sushi on a plate will eat the sushi, causing it to be removed from its plate and an empty plate to appear on the table.
+5. We need to make money! Whenever a sushi is eaten, customers should be automatically charged! Based on a budget decided by you, the developer, the amount of money remaining should go down by the cost of the sushi that was eaten. There is a spot to display this number in the `Table` component
+6. No free meals! Customers cannot eat any sushi that exceeds the amount of money remaining in their balance
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bonus
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If and only if you have time, you may work on the following:
 
-### Analyzing the Bundle Size
+1. SushiWallet! Add a form for customers to add more money to their balance
+2. Full rotation! When the end of the line of sushi is reached, the conveyor belt should start from the beginning. Sushi that have already been eaten should remain eaten. It would be creepy if they reappeared!
+3. Anything else!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: If at the end of the challenge you have achieved all the functionality required but the style looks off, this is okay!

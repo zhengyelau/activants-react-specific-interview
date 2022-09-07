@@ -1,151 +1,28 @@
-extract:root {
-  --theme-bg-color: rgba(16 18 27 / 40%);
-  --border-color: rgba(113 119 144 / 25%);
-  --theme-color: #f9fafb;
-  --inactive-color: rgb(113 119 144 / 78%);
-  --body-font: "Poppins", sans-serif;
-  --hover-menu-bg: rgba(12 15 25 / 30%);
-  --content-title-color: #999ba5;
-  --content-bg: rgb(146 151 179 / 13%);
-  --button-inactive: rgb(249 250 251 / 55%);
-  --dropdown-bg: #21242d;
-  --dropdown-hover: rgb(42 46 60);
-  --popup-bg: rgb(22 25 37);
-  --search-bg:  #14162b;
-  --overlay-bg: rgba(36, 39, 59, 0.3);
-  --scrollbar-bg: rgb(1 2 3 / 40%);
-}
-
 .App {
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width:100%
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.card {
-  background-color: rgba(16 18 27 / 40%);
-  max-width: 1250px;
-  max-height: 860px;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  border-radius: 14px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.classification-background{
-  background-color: rgba(16 18 27 / 40%);
-  width:95%;
-  margin:auto;
-  border-radius: 15px;
-}
-
-.label{
-  width:95%;
-  margin:auto;
-  font-size: 18px;
-  font-weight:bold;
-  text-align: left;
-  color:white;
-  padding-left: 10px;
-  padding-bottom: 3px;
-  padding-top:10px;
-}
-
-.email-content-input {
-  color:white;
-  font-size:1.5rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: left;
-  margin-top:0px;
-  margin-bottom: 0px;
-}
-
-pre {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-.classification {
-  color:white;
-  font-size:1.2rem;
-  padding-top:20px;
-  padding-bottom: 20px;
-}
-
-.email-content {
-  color:white;
-  font-size:1.2rem;
-  padding:20px;
-  padding-top: 0px;
-  text-align: left;
-  margin-top:0
-}
-
-.email-content-border{
-  border-color: white;
-  border:10px;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
+.App-title {
+  font-size: 1.5em;
 }
 
-.video-bg {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
