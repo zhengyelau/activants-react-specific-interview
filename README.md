@@ -10,8 +10,6 @@ In the project directory, you can run:
 
 ## Setup
 
----
-
 > If you do not have json-server installed, please run the following command `npm install -g json-server`
 
 ### Server
@@ -36,8 +34,6 @@ Be sure to read all of the notes in the all of the components before getting sta
 
 ## Deliverables
 
----
-
 Inspectors will be coming by to check that our patented Sushi Saga conveyor belt is working properly! Oh no! They will be checking the following:
 
 1. Sushi list is properly received from the server
@@ -48,8 +44,6 @@ Inspectors will be coming by to check that our patented Sushi Saga conveyor belt
 6. No free meals! Customers cannot eat any sushi that exceeds the amount of money remaining in their balance
 
 ## Bonus
-
----
 
 If and only if you have time, you may work on the following:
 
