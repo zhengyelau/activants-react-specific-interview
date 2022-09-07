@@ -6,7 +6,7 @@ We've had a bit of trouble with our patented conveyor belt system, so before you
 
 ## Desired Outcome
 
-In the project directory, you can run:
+![Image](sushi-saga-demo.gif)
 
 ## Setup
 
