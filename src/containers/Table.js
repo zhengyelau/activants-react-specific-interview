@@ -6,6 +6,9 @@ const Table = (props) => {
       Please come up with a logic to display the number of empty plates on the table correctly. The following has already been styled for you.
     */
     // <div className="empty-plate" style={{ top: -7 * index }}  />
+    return array.map((item, index) => {
+      return <div className="empty-plate" style={{ top: -7 * index }}/>
+    })
   };
 
   return (
