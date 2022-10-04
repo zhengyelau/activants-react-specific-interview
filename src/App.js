@@ -80,7 +80,7 @@ export const App = () => {
       alert("Sushi has been eaten!");
       return;
     } else {
-      setSushis({ ...sushis, eatenSushi: sushis.eatenSushi.push(id) });
+      sushis.eatenSushi.push(id);
     }
 
     if (sushis.bank < price) {
