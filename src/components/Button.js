@@ -1,7 +1,10 @@
 import React from "react";
 
 const Button = (props) => {
-  return <button onClick={() => props.moreSushis()}>{props.buttonText}</button>;
+
+  const { firstPage } = props;
+
+  return <button onClick={() => props.moreSushis()} style={{ visibility: firstPage ? "hidden" : "visible" }}>{props.buttonText}</button>;
 };
 
 export default Button;

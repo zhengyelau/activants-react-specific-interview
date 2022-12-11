@@ -11,6 +11,7 @@ We've had a bit of trouble with our patented conveyor belt system, so before you
 ## Setup
 
 > If you do not have json-server installed, please run the following command `npm install -g json-server`
+> Alternative way `npx json-server --watch db.json`
 
 ### Server
 

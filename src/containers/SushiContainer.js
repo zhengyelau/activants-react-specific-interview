@@ -3,10 +3,13 @@ import Button from "../components/Button";
 import Sushi from "../components/Sushi";
 
 const SushiContainer = (props) => {
+
+  const { firstPage } = props;
+
   return (
     <Fragment>
       <div className="belt">
-        <Button moreSushis={props.goBack} buttonText="Go back!" />
+        <Button moreSushis={props.goBack} buttonText="Go back!" firstPage={firstPage} />
         {props.sushis.map((sushi, index) => (
           <Sushi displaySushi={sushi} eatSushi={props.eatSushi} key={index} />
         ))}

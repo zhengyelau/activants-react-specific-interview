@@ -20,7 +20,7 @@ const Table = (props) => {
             /* 
                renderPlates takes an array 
                and renders an empty plate
-               for every element in the array
+               for every element in the arrway
             */
             renderPlates(props.sushiPlate)
           }

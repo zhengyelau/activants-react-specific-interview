@@ -63,6 +63,9 @@ export const App = () => {
     /*Please come up with a logic to allow users to see the previous 4 sushis */
     if (sushis.startIndex > 4)
       setSushis({ ...sushis, startIndex: sushis.startIndex - 4 });
+    else
+      setSushis({...sushis, startIndex: 0});
+      
   };
 
   const updateSushis = (id, price) => {
@@ -98,6 +101,7 @@ export const App = () => {
         moreSushis={moreSushis}
         goBack={goBack}
         eatSushi={updateSushis}
+        firstPage={sushis.startIndex === 0 ? true : false}
       />
       <Table sushiPlate={sushis.eatenSushi} bank={sushis.bank} />
 
